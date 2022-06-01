@@ -4,7 +4,7 @@ import {
   NativeSelect,
   FormHelperText,
 } from "@mui/material";
-import styles from "./CountySelectoer.module.css";
+import styles from "./CountySelector.module.css";
 // import { styled } from "@mui/styles";
 
 // const CustomInput = styled(InputLabel);
@@ -12,9 +12,11 @@ import styles from "./CountySelectoer.module.css";
 function CountrySelector({ value, handleChange, countries }) {
   return (
     <FormControl>
-      <InputLabel htmlFor="country-selector" shrink className={styles.input}>
-        Quốc Gia
-      </InputLabel>
+      <InputLabel
+        htmlFor="country-selector"
+        shrink
+        className={styles.input}
+      ></InputLabel>
       <NativeSelect
         value={value}
         onChange={handleChange}
