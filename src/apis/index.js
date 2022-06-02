@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const getCountries = () =>
-  axios.get("https://api.covid19api.com/countries");
+  fetch("https://api.covid19api.com/countries").then((res) => res.json());
 
 export const getReportByCountry = (country) =>
   axios.get(`https://api.covid19api.com/dayone/country/${country}`);
